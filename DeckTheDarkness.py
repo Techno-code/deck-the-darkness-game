@@ -49,27 +49,27 @@ def wrapText(text, font, maxWidth, x, y, screen):
 pygame.init()
 screen = pygame.display.set_mode(SIZE)
 pygame.display.set_caption("Deck the Darkness")
-cardTemplate = pygame.image.load("assets/card-template.png").convert_alpha()
+cardTemplate = pygame.image.load("dist/assets/card-template.png").convert_alpha()
 cardWid = 170
 cardHei = 250
 cardTemplate = pygame.transform.scale(cardTemplate, (cardWid, cardHei))
 
-crossOut = pygame.image.load("assets/cross-out.png")
+crossOut = pygame.image.load("dist/assets/cross-out.png")
 
-castleBG = pygame.image.load("assets/castle-background.jpg").convert_alpha()
+castleBG = pygame.image.load("dist/assets/castle-background.jpg").convert_alpha()
 castleBG = pygame.transform.scale(castleBG, (1000, 700))
-forestBG = pygame.image.load("assets/forest-background.jpg").convert_alpha()
+forestBG = pygame.image.load("dist/assets/forest-background.jpg").convert_alpha()
 forestBG = pygame.transform.scale(forestBG, (1000, 700))
 
-hero1Img = pygame.image.load("assets/RegularHero.png").convert_alpha()
-hero2Img = pygame.image.load("assets/ToughHero.png").convert_alpha()
-hero3Img = pygame.image.load("assets/ManaHero.png").convert_alpha()
+hero1Img = pygame.image.load("dist/assets/RegularHero.png").convert_alpha()
+hero2Img = pygame.image.load("dist/assets/ToughHero.png").convert_alpha()
+hero3Img = pygame.image.load("dist/assets/ManaHero.png").convert_alpha()
 heroWid = 150
 heroHei = 218
 hero1Img = pygame.transform.scale(hero1Img, (heroWid, heroHei))
 
 #icons
-poisonIcon = pygame.image.load("assets/poison_icon.png").convert_alpha()
+poisonIcon = pygame.image.load("dist/assets/poison_icon.png").convert_alpha()
 poisonIcon = pygame.transform.scale(poisonIcon, (30, 30))
 
 
@@ -433,7 +433,7 @@ def nextFightScreen(fight):
     screen.blit(continueText, (400, 450))
     screen.blit(nextFightText, (250, 200))
 
-woodBG = pygame.image.load("assets/wood-background.jpg")
+woodBG = pygame.image.load("dist/assets/wood-background.jpg")
 woodBG = pygame.transform.scale(woodBG, (1000, 700))
 isHoverStartGame = False
 isHoverHTP = False
@@ -496,38 +496,38 @@ def htpScreen():
 
 
 
-# Card image assets
-knifeImg = pygame.image.load("assets/knife-art.png").convert_alpha()
+# Card image dist/assets
+knifeImg = pygame.image.load("dist/assets/knife-art.png").convert_alpha()
 knifeImg = pygame.transform.scale(knifeImg, (100, 100))
-blastImg = pygame.image.load("assets/punch-art.png")
+blastImg = pygame.image.load("dist/assets/punch-art.png")
 blastImg = pygame.transform.scale(blastImg, (100, 100))
-strikeImg = pygame.image.load("assets/strike-art.png")
+strikeImg = pygame.image.load("dist/assets/strike-art.png")
 strikeImg = pygame.transform.scale(strikeImg, (100, 100))
-fireballImg = pygame.image.load("assets/fireball-art.png")
+fireballImg = pygame.image.load("dist/assets/fireball-art.png")
 fireballImg = pygame.transform.scale(fireballImg, (100, 100))
-shieldImg = pygame.image.load("assets/shield-art.png")
+shieldImg = pygame.image.load("dist/assets/shield-art.png")
 shieldImg = pygame.transform.scale(shieldImg, (100, 100))
-armourImg = pygame.image.load("assets/armour-art.png")
+armourImg = pygame.image.load("dist/assets/armour-art.png")
 armourImg = pygame.transform.scale(armourImg, (100, 100))
-rejuvenateImg = pygame.image.load("assets/rejuvenate-art.png")
+rejuvenateImg = pygame.image.load("dist/assets/rejuvenate-art.png")
 rejuvenateImg = pygame.transform.scale(rejuvenateImg, (100, 100))
-littlehealImg = pygame.image.load("assets/littleheal-art.png")
+littlehealImg = pygame.image.load("dist/assets/littleheal-art.png")
 littlehealImg = pygame.transform.scale(littlehealImg, (100, 100))
-poisonswordImg = pygame.image.load("assets/poisonsword-art.png")
+poisonswordImg = pygame.image.load("dist/assets/poisonsword-art.png")
 poisonswordImg = pygame.transform.scale(poisonswordImg, (100, 100))
-poisonpotionImg = pygame.image.load("assets/poison_potion.jpeg")
+poisonpotionImg = pygame.image.load("dist/assets/poison_potion.jpeg")
 poisonpotionImg = pygame.transform.scale(poisonpotionImg, (100, 100))
 
-# Enemy image assets
-wolfImg = pygame.image.load("assets/wolf.png").convert_alpha()
+# Enemy image dist/assets
+wolfImg = pygame.image.load("dist/assets/wolf.png").convert_alpha()
 wolfWid = 150
 wolfHei = 100
 wolfImg = pygame.transform.scale(wolfImg, (wolfWid, wolfHei))
 
-goblinImg = pygame.image.load("assets/goblin-art.png")
+goblinImg = pygame.image.load("dist/assets/goblin-art.png")
 goblinImg = pygame.transform.scale(goblinImg, (150, 100))
-witch1Img = pygame.image.load("assets/witch1-art.png")
-witch2Img = pygame.image.load("assets/witch2-art.png")
+witch1Img = pygame.image.load("dist/assets/witch1-art.png")
+witch2Img = pygame.image.load("dist/assets/witch2-art.png")
 witch1Img = pygame.transform.scale(witch1Img, (150, 100))
 witch2Img = pygame.transform.scale(witch2Img, (150, 100))
 
